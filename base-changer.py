@@ -10,6 +10,5 @@ while Number != 0:
     Remainder = Number % Base
     Number = Number // Base
     list.append(Remainder)
-    StringNum =+ list.pop()
     
-print(list)
+print(list[])
