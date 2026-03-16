@@ -11,4 +11,5 @@ while Number != 0:
     Number = Number // Base
     list.append(Remainder)
     
-print(list[])
+list.reverse()
+print(list)
