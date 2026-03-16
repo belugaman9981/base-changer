@@ -6,7 +6,8 @@ list = []
 i = 0
 
 while Base != 0:
-    Base = Number % Base
-    Base.
+    Remainder = Number % Base
+    Number = Number // Base
+    list.append(Remainder)
     
 print(list)
