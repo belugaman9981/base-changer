@@ -3,17 +3,17 @@ what_kind = float(input("What kind do you want it to be (normal to ?, ? to norma
 
 if what_kind == 1:
     
-    number = input("Enter the number: ")
-    base = int(input("Enter the base of the you want to tranform number into: "))
-    
-    decimal = 0
-    power = 0
+    number = int(input("What is the number you want to transform? "))
+    base = int(input("What base do you want to convert to? "))
 
-    for digit in number:
-        decimal += int(digit) * (base ** power)
-        power += 1
-        
-    print("Base", base, "value is:", decimal)
+    result = ""
+
+    while number > 0:
+        remainder = number % base
+        result = str(remainder) + result   # add to the front
+        number = number // base
+
+    print(result)
     
 elif what_kind == 2:
     
