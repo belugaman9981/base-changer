@@ -1,5 +1,7 @@
 what_kind = float(input("What kind do you want it to be (normal to ?, ? to normal or ? to ?)? "))
 
+digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
 
 if what_kind == 1:
     
