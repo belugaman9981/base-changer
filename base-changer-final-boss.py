@@ -1,4 +1,4 @@
-what_kind = float(input("What kind do you want it to be (normal to ?, ? to normal or ? to ?)? "))
+what_kind = input("What kind do you want it to be (normal to ?, ? to normal or ? to ?)? ")
 
 digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -37,7 +37,6 @@ elif what_kind == 3:
     base_from = int(input("Enter the base of that number: "))
     base_to = int(input("Enter the base you want to convert to: "))
 
-    # Step 1: Convert to base 10
     decimal = 0
     power = 0
 
@@ -46,7 +45,6 @@ elif what_kind == 3:
         decimal += value * (base_from ** power)
         power += 1
 
-    # Step 2: Convert from base 10 to target base
     result = ""
 
     while decimal > 0:
