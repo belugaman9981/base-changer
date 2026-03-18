@@ -1,16 +1,11 @@
-def convert_from_base10(number, base):
-    if number == 0:
-        return "0"
-    
-    digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    result = ""
-    
-    while number > 0:
-        remainder = number % base
-        result = digits[remainder] + result
-        number //= base
-    
-    return result
+number = int(input("What is the number you want to transform? "))
+base = int(input("What base do you want to convert to? "))
 
-# Example
-print(convert_from_base10(255, 16))  # FF
+result = ""
+
+while number > 0:
+    remainder = number % base
+    result = str(remainder) + result   # add to the front
+    number = number // base
+
+print(result)
