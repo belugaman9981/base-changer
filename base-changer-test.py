@@ -1,14 +1,16 @@
-number = input("Enter the number: ").upper()
-base = int(input("Enter the base of the number: "))
+def convert_from_base10(number, base):
+    if number == 0:
+        return "0"
+    
+    digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    result = ""
+    
+    while number > 0:
+        remainder = number % base
+        result = digits[remainder] + result
+        number //= base
+    
+    return result
 
-decimal = 0
-power = 0
-
-digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-for digit in reversed(number):
-    value = digits.index(digit)
-    decimal += value * (base ** power)
-    power += 1
-
-print("Base 10 value is:", decimal)
+# Example
+print(convert_from_base10(255, 16))  # FF
