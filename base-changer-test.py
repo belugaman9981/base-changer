@@ -5,7 +5,7 @@ result = ""
 
 while number > 0:
     remainder = number % base
-    result = str(remainder) + result   # add to the front
+    result = str(remainder) + result
     number = number // base
 
 print(result)
