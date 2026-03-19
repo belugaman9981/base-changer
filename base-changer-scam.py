@@ -1,5 +1,8 @@
 number = int(input("What is the number you want to transform? "))
 
+def doNothing(self):
+    for i in range(self)
+
 i = 100
 
 while i > 0:
