@@ -9,3 +9,4 @@ while number > 0:
     number = number // base
 
 print(result)
+
