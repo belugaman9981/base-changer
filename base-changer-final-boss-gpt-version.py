@@ -1,3 +1,4 @@
+
 what_kind = int(input("Choose conversion:\n1 = Base 10 → Any Base\n2 = Any Base → Base 10\n3 = Any Base → Any Base\n"))
 
 digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
